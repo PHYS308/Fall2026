@@ -1,0 +1,77 @@
+---
+title: "Course Content and Resources"
+format: 
+  html:
+    toc: true
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+    self-contained: true
+editor: source
+---
+# The Five Learning Objective Bundles
+
+::: panel-tabset
+## The math of QM
+
+- apply an operator to one of its eigenstates
+- apply Eulers formula to convert complex exponentials to trig
+- apply orthonormality conditions to inner products of basis states
+- choose the overall phase of a state to be real and positive
+- complex conjugate and transpose to make a ket a bra
+- determine the eigensystem of a Hamiltonian
+- express the eigenstates of non-z spin measurement in the z basis
+- normalize a quantum state
+- take an inner product in Dirac or Matrix Notation (complex conjugate and transpose)
+- use the unit circle or similar to identify behavior of half-integer multiples of sines and cosines
+
+
+## Measurement
+
+- correctly identify the possible results of a measurement
+- know how measurement affects a superposition state
+- know how to calculate the expectation value of an operator
+- know how to calculate the probability of a measurement
+- know how to calculate the uncertainty of an operator
+
+## Time evolution
+
+- express an initial state in terms of the eigenstates of the Hamiltonians to time evolve
+- correctly time-evolve a state using the Hamiltonian
+- calculate a time-dependent expectation value
+- calculate a time-dependent uncertainty
+
+
+## Applications
+
+- define the S^2 operator for spin s systems
+- define the Sz operator for spin s systems
+- identify the Hamiltonian for a particle in an infinite square well
+- identify the Hamiltonian for a free particle
+- identify the Hamiltonian for an electron in a Hydrogen atom
+- identify the Hamiltonian for a particle in a generic potential function
+- identify the Hamiltonian for a spin-s particle in a magnetic field
+
+
+## The wave function
+
+- normalize a state in wave function notation
+- find an overlap or probability using wavefunction notation
+- calculate an expectation value in wave function notation
+- calculate an uncertainty in wave function notation
+- solve the energy eigenvalue equation in position representation
+- identify and apply the boundary conditions for a particle in a potential
+
+:::
+
+# Math and Physics Resources {#contentresources}
+
+[Videos: Khan Academy's unit on linear algebra](https://www.khanacademy.org/math/linear-algebra)
+
+[Videos: Khan Academy's unit on differential equations](https://www.khanacademy.org/math/differential-equations)
+
+[Videos: Khan Academy's unit on multivariable calc](https://www.khanacademy.org/math/multivariable-calculus)
+
+[Videos: Khan Academy's unit on probabilities](https://www.khanacademy.org/math/statistics-probability/probability-library)
+
