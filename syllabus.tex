@@ -1,0 +1,560 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={PHYS 308 Syllabus},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{PHYS 308 Syllabus}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+
+\section{Who is the professor?}\label{who-is-the-professor}
+
+I'm Casey Berger and this is my third year at Bates College. At Bates,
+I've taught PHYS 211 (Newtonian Mechanics), PHYS 216 (Computational
+Physics), PHYS 301 (Mathematical Methods of Physics), PHYS 308
+(Introductory Quantum Mechanics), and PHYS 409 (Quantum Theory). Before
+Bates, I was a professor at Smith College in Physics and Statistical and
+Data Sciences. And long before that -- before I went to school for
+physics and computational science -- I went to college for philosophy,
+film production, and Spanish and worked in the film industry. It took me
+a long time to find my way to physics, but I wouldn't change any of it.
+The long and winding path taught me so much more about who I am, what I
+am capable of, and how many opportunities are available in the world. It
+also taught me that it's never too late to find a new passion or change
+your career direction.
+
+My research involves applying high performance computing and data
+science techniques to many-body quantum systems, which just means
+studying how medium-to-large numbers of quantum objects like electrons,
+neutrons, or atoms interact with each other and their environment. This
+sounds straightforward, but unfortunately the mathematics of quantum
+mechanics means these problems become impossible to solve by hand and
+extremely challenging to solve even with high powered computers when the
+system is still only a few particles.
+
+Outside of physics, I am a person with lots of interests and hobbies. I
+love being outdoors in all seasons, but also love reading a book or
+playing board games inside with a cup of tea. Ask me for book
+recommendations, recipes for interesting food, or great hikes in Maine!
+
+\section{Classroom expectations}\label{classexpectations}
+
+\subsection{What you can expect from me}
+
+\begin{itemize}
+\tightlist
+\item
+  I will stay home if I am feeling sick and make arrangements to deliver
+  the course material
+\item
+  I will work with you to arrange accommodations when you need them
+\item
+  I will respect your time by starting and ending class on time
+\item
+  I will answer your questions thoughtfully, and if I don't know the
+  answer, I will follow up in a timely manner
+\item
+  I will embrace who you are as whole people
+\item
+  I will model respect, openness, and engagement, and foster a
+  supportive and inclusive environment
+\item
+  I will be honest when I make mistakes, because failure is part of
+  growing
+\end{itemize}
+
+\subsection{What I expect from you}
+
+\begin{itemize}
+\tightlist
+\item
+  That you stay home if you are sick and contact me via email to arrange
+  accommodations
+\item
+  That you be mentally present when you are in class, to the best of
+  your ability
+\item
+  That you make a good faith effort at the work, both during and outside
+  of class time
+\item
+  That you ask questions if you are confused (you may do this privately
+  -- there is no obligation to ask during class hours)
+\item
+  That you communicate with me when you have problems that interfere
+  with your ability to engage with the coursework
+\item
+  That you treat your peers with respect and openness, and that you
+  participate in creating an inclusive, supportive, and engaged
+  classroom
+\end{itemize}
+
+\subsection{What is not expected}
+
+\begin{itemize}
+\tightlist
+\item
+  Perfection. Ever. It's a myth.
+\item
+  That you will `sit still' or ask for permission to leave the classroom
+  to go to the bathroom or if you just need a minute. You're adults and
+  I trust you to do what you need to.
+\item
+  That everyone will learn in the same way. You do not have to match
+  some ``model student'' to do well in this class
+\end{itemize}
+
+\section{Technology Policy}\label{techpolicy}
+
+\subsection{Use of LLMs}\label{llms}
+
+Large Language Models and agentic AI are so ubiquitous now that it seems
+almost silly to say so. You are facing the great challenge of how to
+navigate a world filled with AI-generated information and where the
+advice changes from minute to minute about whether you must become an AI
+expert or avoid AI to succeed.
+
+But you are also a student at Bates College, where our mission includes
+educating ``the whole person through creative and rigorous scholarship
+in a collaborative residential community'' and ``preparing leaders
+sustained by a love of learning and a commitment to responsible
+stewardship of the wider world.'' And that means learning to cultivate
+your very human skills of creativity and critical thinking, and engaging
+in the productive struggle that leads to growth and learning. AI
+presents major challenges to all these values, from the environmental
+impacts of building and maintaining them and the traumatizing and
+exploitative nature of the labor involved in training them to the way
+cognitive offload reduces our capacity for independent thinking and the
+emotional offloading erodes our ability to live in community.
+
+But it is up to you, as adults, to learn how you want to exist in the
+world we are creating right now. So while I will not fully ban the use
+of AI in this course, I will ask you to proceed very thoughtfully and
+carefully if you do use AI, and to follow these guidelines.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  If you are going to use AI in any way in this class, you must
+  \textbf{first} complete the \hyperref[metacognitiongrade]{AI
+  assignment in the metacognition grade category}. This is part of your
+  grade anyway, so it benefits you to do this.
+\item
+  If you use AI in any way, even just to ask a quick question and
+  clarify something, you \textbf{must} cite your source. This means
+  including a record of the prompt and the response, as well as one
+  sentence discussing what you learned from this use of AI.
+\item
+  You may \textbf{never} submit something as your own work if it was
+  done by AI, even if you hand-copied it. Just like you wouldn't claim
+  your classmate's work as your own, you can't claim an LLM's work
+  either.
+\end{enumerate}
+
+Violation of this policy, along any of the three requirements, will
+result in a zero on the assignment in question.
+
+\subsection{Use of technology during class time}\label{distractions}
+
+Technology is completely infused into our lives, and I'm not trying to
+convince anyone to stop using it. As a computational physicist, it's my
+literal vocation to use digital technology, and as a teacher, I spend
+many hours a day staring at my screen to write lesson plans and respond
+to emails. But it's important to know that as useful a tool as
+technology is, it can also inhibit us.
+
+First, the science. While we all believe ourselves to be excellent
+multitaskers, studies show that we can't actually focus on more than one
+thing at a time - what we are doing is actually rapidly task switching
+between one task and the next, and that
+\href{https://www.apa.org/topics/research/multitasking}{task switching
+takes time and energy, making us do both tasks more poorly}. This means
+that if you're toggling between your email, social media, text messages,
+or whatever other content might be up on your laptop, phone, or tablet
+in class, you are going to have a harder time learning the content in
+class \emph{and} a harder time doing whatever else you are trying to do.
+In addition, studies have found that
+\href{https://www.journals.uchicago.edu/doi/full/10.1086/691462}{merely
+being in the presence of our smartphones can cause us to be distracted
+by them}.
+
+I have found this to be true, and as a general rule, if I'm working on
+something that requires my focus, such as writing a lesson plan or
+working on research projects, I have a box in my office that I put my
+phone in so I can't be distracted by it.
+
+Our goal in this class is to learn, and class time is an important time
+set aside for us to meet together in community to work towards the
+learning goals. In order to make sure you get the most out of that time,
+and to help support your classmates to not be distracted, the policy for
+devices is the following:
+
+\begin{itemize}
+\tightlist
+\item
+  Phones must be on silent and out of view (to you and your classmates)
+  throughout the duration of class
+\item
+  Laptops and tablets are *opt in** only, meaning if you wish to use one
+  and do not already have accommodations to use one with the Office of
+  Accessible Education, you must submit a request to use a specific
+  device or devices in the
+  \href{https://forms.gle/NUZQSNaDPxXRTite8}{welcome form}, along with
+  an explanation of how each device will be conducive to your learning
+  and how you will use it
+\end{itemize}
+
+Please note that there is a handy way to not only follow the course
+policy on cell phones, but also earn some \hyperref[roundup]{extra
+credit}, so I encourage you to take advantage of that to not only help
+you practice the habit of putting your phone away when it's time to
+focus, but also get yourself a grade boost.
+
+One final note: I recognize that sometimes we have situations that
+require us to be reachable, so if you have a special circumstance that
+means you need to be able to take a call when it comes in or receive an
+email notification, please talk to me about an exception to the policy.
+
+\section{Class Recording Policy}\label{recording}
+
+In line with our shared values around Academic Integrity and Conduct as
+articulated in the Student Code of Conduct, the Dean of Faculty office
+reminds all students that screen capturing or making audio/video
+recordings of synchronous or asynchronous meetings, lectures,
+discussions, course materials, or other classroom activities without the
+prior knowledge and consent of all parties is prohibited. This applies
+to the use of tape or digital recorders, cell phones, smartphones,
+computers, and other devices capable of creating a screen capture or
+making audio/video recordings. Likewise, the editing, sharing, or use of
+recorded or digitally shared course content outside of their assigned or
+intended purpose is also prohibited. Students with disabilities who wish
+to record classroom activity should contact the Office of Accessible
+Education for information about appropriate protocols.
+
+\section{Assignments and Grading}\label{assignments}
+
+There are three main categories for grade items in this class:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \hyperref[practicegrade]{Practice}: This work is low-stakes work
+  intended to prepare you for the assessments in this class. It includes
+  pre-class quizzes on the reading and the weekly homework problems.
+  This will make up 45\% of your final grade.
+\item
+  \hyperref[LOgrade]{Proficiency}: 50\% of your grade will be made up of
+  5 bundles of learning objectives. You will have opportunities to
+  demonstrate your proficiency in these learning objectives through
+  in-class tests.
+\item
+  \hyperref[metacognitiongrade]{Metacognition}: One of the most
+  important skills you will learn in college is how to learn. This is
+  called metacognition, and I have built into the grade in this class a
+  chance to practice these metacognitive skills. 5\% of your final grade
+  will come from the metacognition assignments in this category.
+\end{enumerate}
+
+\subsection{Practice}\label{practicegrade}
+
+Almost half of your grade will be made up of a collection of work I am
+calling ``Practice.'' This includes reading the textbook and completing
+a pre-class reading quiz as well as solving homework problems and
+reflecting on your work.
+
+\textbf{For every assignment in the Practice category, the late policy
+is the same. Work done before the due date will receive full credit. All
+work done after the due date will receive half credit.}
+
+This is the base of the learning pyramid, and so there is a lot of work
+in this category.
+
+There will be 140 total points available in the Practice category, but
+the maximum grade you can achieve is 120 points. There are more points
+available than you need, so you can make some choices about what you
+want to put your energy into.
+
+\subsubsection{Reading Quizzes}
+
+These are simple quizzes based on the reading, intended mostly to
+strengthen your retention of what you read. These are due at 12PM on the
+day of class, and there will be 12 reading quizzes throughout the
+semester.
+
+\subsubsection{Homeworks}
+
+Every week, there will be a number of homework problems assigned. When
+you complete a problem, you can submit it on Lyceum. Once you do that,
+the solution will become available. You should check the solution
+against your own work and then fill out the reflection form for that
+problem in Lyceum.
+
+\textbf{You will only get credit for a problem if you both submit a good
+faith attempt at the solution and fill out the reflection form.}
+
+\subsection{Proficiency in the Learning Objectives}\label{LOgrade}
+
+There will be five topics with learning objectives that will be assessed
+in this class. Those can all be found on the
+\href{coursecontent.qmd}{Course Content} page.
+
+The topics are:
+
+\begin{itemize}
+\tightlist
+\item
+  The Math of QM
+\item
+  Measurement
+\item
+  Time Evolution
+\item
+  The wave function
+\item
+  Applications
+\end{itemize}
+
+\subsubsection{In-Class Assessments}\label{assessments}
+
+There will be two midterms and a final, each of which will be graded on
+a single-point rubric. That rubric will have a list of the learning
+objectives assessed by the test, and you will be graded on whether you
+demonstrated proficiency in that learning objective.
+
+Each midterm is technically cumulative, but it will emphasize more
+recent topics over older ones. There will be two versions of each
+midterm, so you will have two chances to demonstrate proficiency, and I
+will always take the higher of the two scores.
+
+There will also be a cumulative final, which I will design to contain
+the most-missed learning objectives across the class.
+
+\subsection{Metacognition}\label{metacognitiongrade}
+
+You can earn a total of six points towards metacognition, but you only
+need three to complete this category. These assignments are designed to
+get you thinking about how you engage with your learning.
+
+\textbf{The due dates on these assignments are fixed in order to support
+the process of self-reflection and growth. If you want to do these, you
+must complete them by the deadline posted in Lyceum}
+
+\subsubsection{SMART goals}
+
+This consists of three parts, each of which is worth one point.
+
+\begin{itemize}
+\tightlist
+\item
+  Reading about SMART goals and setting one for yourself
+\item
+  Checking in with your progress mid-semester on your SMART goal (you
+  must complete the first assignment to complete this one)
+\item
+  Reflecting on how your SMART goal went at the end of the semester (you
+  must complete the first assignment to complete this one)
+\end{itemize}
+
+\subsubsection{Reading and Self-Reflection}
+
+There are two reflection assignments, both of which must be done early
+in the semester:
+
+\begin{itemize}
+\tightlist
+\item
+  Growth mindset: This is a short reading assignment on growth mindset
+  versus fixed mindset, followed by a short reflection on when you have
+  experienced a growth mindset before in your life. This is worth one
+  point.
+\item
+  AI reflection: this consists of a set of readings about generative AI,
+  followed by a short reflection on what you learned from the readings.
+  This is worth two points, as the readings are more substantive.
+\end{itemize}
+
+\subsection{Extra Credit}\label{roundup}
+
+Because there is already some extra room built into your grade, there
+will only be one opportunity to earn extra credit in this class, and
+that is by turning your phone on do not disturb and placing it in a
+designated place every class. If you do this for 75\% of class sessions,
+I will round your grade up after the final grade is calculated.
+
+\section{Deadlines and Late Policy}\label{deadlines}
+
+There is so much flexibility in the number of points you can earn in
+this class, so there will be no extensions provided on homeworks,
+reading quizzes, or metacognition assignments except in case of major
+extenuating circumstances.
+
+
+
+
+\end{document}
