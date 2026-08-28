@@ -19,7 +19,7 @@ editor: source
 
 ## Where do I get my textbook?
 
-The textbook for this class is technically out of print, so I will be posting the chapters we need in Lyceum, and The library should have copies available. In case you do want to purchase this book, it's called "Quantum Mechanics: A Paradigms Approach, 1st edition" by David McIntyre (Cambridge University Press).
+The textbook for this class is technically out of print, so I will be posting the chapters we need in Lyceum, and the library should have copies available. In case you do want to purchase this book, it's called "Quantum Mechanics: A Paradigms Approach, 1st edition" by David McIntyre (Cambridge University Press).
 
 ![](images/QMMcIntyre.jpg){width=200}
 
@@ -29,7 +29,7 @@ There is only one edition of this book, but there is a cheaper printing from 202
 
 Office hours: 
 
--   Tuesdays 2PM-3PM
+-   Tuesdays 1:30PM-2:30PM
 -   Wednesdays 4PM-5PM
 
 You can also make a one-on-one meeting in calendly (see Lyceum for the scheduling link). If you schedule a one-on-one meeting, it will be in my office. The location of my office and the classroom for office hours are both in Lyceum.

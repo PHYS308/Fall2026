@@ -106,7 +106,9 @@ There will be 140 total points available in the Practice category, but the maxim
 
 ::: panel-tabset
 #### Reading Quizzes {#readingquizzes}
-These are simple quizzes based on the reading, intended mostly to strengthen your retention of what you read. These are due at 12PM on the day of class, and there will be 12 reading quizzes throughout the semester.
+These are simple quizzes based on the reading, intended mostly to strengthen your retention of what you read. These are due at 11AM the day of class, and there will be 20 reading quizzes throughout the semester.
+
+The reason I have these due two hours before class, rather than immediately before class, is so that I have time to look over them and see what questions arise. This helps me tailor that day's class toward what people actually need more support with.
 
 #### Homeworks {#homework}
 
