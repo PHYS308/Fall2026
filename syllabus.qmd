@@ -95,6 +95,8 @@ There are three main categories for grade items in this class:
 
 3. [Metacognition](#metacognitiongrade): One of the most important skills you will learn in college is how to learn. This is called metacognition, and I have built into the grade in this class a chance to practice these metacognitive skills. 5% of your final grade will come from the metacognition assignments in this category. 
 
+![Grading Scheme](images/PHYS308GradePyramid.png){width=300}
+
 ### Practice {#practicegrade}
 Almost half of your grade will be made up of a collection of work I am calling "Practice." This includes reading the textbook and completing a pre-class reading quiz as well as solving homework problems and reflecting on your work. 
 
