@@ -72,7 +72,7 @@
     "href": "changelog.html",
     "title": "Changelog",
     "section": "",
-    "text": "Syllabus changes\n\n\n\n\n\n\n\nDate\nChange\nReason\n\n\n\n\nAug 28, 2026\nN/A\nFirst version of syllabus"
+    "text": "Syllabus changes\n\n\n\n\n\n\n\nDate\nChange\nReason\n\n\n\n\nAug 28, 2026\nN/A\nFirst version of syllabus\n\n\nAug 31, 2026\nAdded FAQ for missing tests\nThis info was not included in the first draft"
   },
   {
     "objectID": "starthere.html",
@@ -372,6 +372,16 @@
     "text": "The Five Learning Objective Bundles\n\nThe math of QMMeasurementTime evolutionApplicationsThe wave function\n\n\n\napply an operator to one of its eigenstates\napply Eulers formula to convert complex exponentials to trig\napply orthonormality conditions to inner products of basis states\nchoose the overall phase of a state to be real and positive\ncomplex conjugate and transpose to make a ket a bra\ndetermine the eigensystem of a Hamiltonian\nexpress the eigenstates of non-z spin measurement in the z basis\nnormalize a quantum state\ntake an inner product in Dirac or Matrix Notation (complex conjugate and transpose)\nuse the unit circle or similar to identify behavior of half-integer multiples of sines and cosines\n\n\n\n\ncorrectly identify the possible results of a measurement\nknow how measurement affects a superposition state\nknow how to calculate the expectation value of an operator\nknow how to calculate the probability of a measurement\nknow how to calculate the uncertainty of an operator\n\n\n\n\nexpress an initial state in terms of the eigenstates of the Hamiltonians to time evolve\ncorrectly time-evolve a state using the Hamiltonian\ncalculate a time-dependent expectation value\ncalculate a time-dependent uncertainty\n\n\n\n\ndefine the S^2 operator for spin s systems\ndefine the Sz operator for spin s systems\nidentify the Hamiltonian for a particle in an infinite square well\nidentify the Hamiltonian for a free particle\nidentify the Hamiltonian for an electron in a Hydrogen atom\nidentify the Hamiltonian for a particle in a generic potential function\nidentify the Hamiltonian for a spin-s particle in a magnetic field\n\n\n\n\nnormalize a state in wave function notation\nfind an overlap or probability using wavefunction notation\ncalculate an expectation value in wave function notation\ncalculate an uncertainty in wave function notation\nsolve the energy eigenvalue equation in position representation\nidentify and apply the boundary conditions for a particle in a potential\n\n\n\n\n\n\nMath and Physics Resources\nVideos: Khan Academy’s unit on linear algebra\nVideos: Khan Academy’s unit on differential equations\nVideos: Khan Academy’s unit on multivariable calc\nVideos: Khan Academy’s unit on probabilities",
     "crumbs": [
       "Course Content and Resources"
+    ]
+  },
+  {
+    "objectID": "FAQ.html#testmakeups",
+    "href": "FAQ.html#testmakeups",
+    "title": "FAQ",
+    "section": "What if I have to miss a test?",
+    "text": "What if I have to miss a test?\nIf you have to miss class on a test day to an approved excuse, you may take the test at the testing center. You must do this no more than 2 days before the test is given and no more than 7 days after, and you can request this option through AESS using this form. If you are not sure your absence is excused or you feel you have a special circumstance, come and talk to me about it and we will discuss the options.",
+    "crumbs": [
+      "FAQ"
     ]
   }
 ]

@@ -9,5 +9,5 @@ editor: source
 | Date  | Change                  | Reason |
 |------------|------------------------------|----------------------------------------------|
 | Aug 28, 2026 | N/A | First version of syllabus |
-
+| Aug 31, 2026 | Added FAQ for missing tests | This info was not included in the first draft |
 : Syllabus changes {.striped .hover}
