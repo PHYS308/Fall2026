@@ -10,4 +10,5 @@ editor: source
 |------------|------------------------------|----------------------------------------------|
 | Aug 28, 2026 | N/A | First version of syllabus |
 | Aug 31, 2026 | Added FAQ for missing tests | This info was not included in the first draft |
+| Aug 31, 2026 | Added more resources | Consolidating from Lyceum |
 : Syllabus changes {.striped .hover}

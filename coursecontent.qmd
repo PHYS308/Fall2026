@@ -67,6 +67,8 @@ editor: source
 
 # Math and Physics Resources {#contentresources}
 
+[MIT Course on Quantum Mechanics](https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/)
+
 [Videos: Khan Academy's unit on linear algebra](https://www.khanacademy.org/math/linear-algebra)
 
 [Videos: Khan Academy's unit on differential equations](https://www.khanacademy.org/math/differential-equations)
