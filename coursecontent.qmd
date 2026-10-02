@@ -39,6 +39,7 @@ editor: source
 
 - express an initial state in terms of the eigenstates of the Hamiltonians to time evolve
 - correctly time-evolve a state using the Hamiltonian
+- calculate a time-dependent probability
 - calculate a time-dependent expectation value
 - calculate a time-dependent uncertainty
 
@@ -46,7 +47,7 @@ editor: source
 ## Applications
 
 - define the S^2 operator for spin s systems
-- define the Sz operator for spin s systems
+- define the Sz, Sx, Sy, or Sn operator for spin s systems
 - identify the Hamiltonian for a particle in an infinite square well
 - identify the Hamiltonian for a free particle
 - identify the Hamiltonian for an electron in a Hydrogen atom

@@ -12,4 +12,5 @@ editor: source
 | Aug 31, 2026 | Added FAQ for missing tests | This info was not included in the first draft |
 | Aug 31, 2026 | Added more resources | Consolidating from Lyceum |
 | Sep 3, 2026  | Clarified points needed in learning objectives | This was left out of the first draft |
+| Oct 2, 2026  | Added some learning objectives to the list | More options to earn points in each category |
 : Syllabus changes {.striped .hover}
